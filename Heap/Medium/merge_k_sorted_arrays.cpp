@@ -1,7 +1,7 @@
 // we are given k arrays, all in sorted order
 // we have to return an array in sorted form containing all the elements of the matrix
 
-// the basic solution is to store all elements in ana array and sort the resultant array
+// the basic solution is to store all elements in and array and sort the resultant array
 // Time = O(NlogN) and Space = O(N), where N = n*k i.e. all elements of the matrix
 
 // We can do it using heap to reduce time = O(Nlogk) and Space = O(k)

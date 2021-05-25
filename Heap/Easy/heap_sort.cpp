@@ -43,3 +43,6 @@ void heapify(int a[], int n, int i)
 	
 }
 
+// in-place sorting alogorithm
+// not stable => as operations in heap can change the relative position of the elements
+

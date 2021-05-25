@@ -14,6 +14,8 @@
 // and pop the top two elements and add them and again push their sum in the heap
 // and add the result in each iteration
 
+// a greedy approach is used
+
 
 long long minCost(long long a[], long long n) {
         
