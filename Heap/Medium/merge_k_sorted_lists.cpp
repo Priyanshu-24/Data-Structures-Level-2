@@ -32,9 +32,7 @@ public:
         {
             ListNode* temp = q.top();
             q.pop();
-            
-            cout<<temp->val<<" ";
-            
+                        
             if(curr == NULL)    // for first node
                 ans = temp;
             
