@@ -77,5 +77,7 @@ vector <int> printBoundary(Node *root)
      return pp;
 }
 
+// Time = O(n) 
+
 // Just see the variation in leaf and right boundary printing how we have to check if left present or right
 // and how we are printing and moving for recursion

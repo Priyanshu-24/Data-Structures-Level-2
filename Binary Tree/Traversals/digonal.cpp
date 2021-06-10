@@ -33,3 +33,5 @@ vector<int> diagonal(Node *root)
    
    return ans;
 }
+
+// Space and Time = O(n)
