@@ -44,4 +44,4 @@ vector<int>bfsOfGraph(int V, vector<int> adj[]){
 	    return bfs; 
 	}
 
-	// space and time = O(n)
+	// time = O(V+E)
