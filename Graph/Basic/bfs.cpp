@@ -1,7 +1,7 @@
 // take a node and check if it is not visited
 // then add that node in the queue (also mark it visited) and run till queue becomes empty
 
-// pop thee first element from the queue and print that for answer
+// pop the first element from the queue and print that for answer
 
 // now also add the adjacents nodes of the node
 
@@ -44,4 +44,7 @@ vector<int>bfsOfGraph(int V, vector<int> adj[]){
 	    return bfs; 
 	}
 
-	// time = O(V+E)
+	// a node is marked visited whenever it is pushed into the queue
+
+	// time  = O(V+E)
+	// space = O(V)

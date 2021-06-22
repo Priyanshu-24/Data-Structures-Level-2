@@ -1,4 +1,4 @@
-class Solution {
+
     void dfs(int node, vector<int> &vis, vector<int> adj[], vector<int> &storeDfs)
     {
         storeDfs.push_back(node); 
@@ -13,19 +13,19 @@ class Solution {
         }
     }
 
-public:
+
 	vector<int>dfsOfGraph(int V, vector<int> adj[])
     {
 	    vector<int> storeDfs;
 
-	    vector<int> vis(V+1, 0);
+	    vector<int> vis(V, 0);
 
-        for(int i = 1;i<=V;i++) {
+        for(int i = 0;i<V;i++) {
         if(!vis[i]) 
             dfs(i, vis, adj, storeDfs); 
     }
 	    return storeDfs; 
 	}
-};
 
-// space and time = O(n)
+// time  = O(V+E)
+// space = O(V)

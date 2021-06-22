@@ -32,18 +32,22 @@ vector<int> topo(int N, vector<int> adj[]) {
 	    {
 	        int node = q.front(); 
 	        q.pop(); 
-	        topo.push_back(node)
+
+	        topo.push_back(node);
+
 	        for(auto it : adj[node])
 	        {
 	            indegree[it]--;
+	            
 	            if(indegree[it] == 0)
 	            {
 	                q.push(it); 
 	            }
 	        }
 	    }
+
 	    return topo;
 	}
 
-	// time = O(N+V)
+	// time  = O(N+V)
 	// spcae = O(N) + O(N)

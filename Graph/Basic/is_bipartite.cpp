@@ -80,5 +80,5 @@ bool bipartite_dfs(int node, vector<int> adj[], vector<int> &color)
 		return true;
 	}
 
-	// time = O(V+E)
+	// time  = O(V+E)
 	// space = O(V+E)
