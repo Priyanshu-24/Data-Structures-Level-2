@@ -42,12 +42,12 @@ bool isCycle(int V, vector<int> adj[])
 
 // just do bfs and use queue with a pair to check the parent(or previously visited node)
 
-bool cycle_check_bfs(int node, vector<int> adj[], vector<int> &vis)
+bool cycle_check_bfs(int src, vector<int> adj[], vector<int> &vis)
 {
     queue<pair<int, int>> q;    // here we use a pair to also store the parent
 
-    q.push({node, -1});
-    vis[node] = 1;
+    q.push({src, -1});
+    vis[src] = 1;
 
     while(!q.empty())
     {
